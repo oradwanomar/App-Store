@@ -16,6 +16,9 @@
 		85C026062855AB7500F53821 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026052855AB7500F53821 /* SearchViewController.swift */; };
 		85C026082855AB7F00F53821 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026072855AB7F00F53821 /* ArcadeViewController.swift */; };
 		85C0260A2855AB8700F53821 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026092855AB8700F53821 /* GamesViewController.swift */; };
+		85C0260F2855B0EB00F53821 /* BundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0260E2855B0EB00F53821 /* BundleExtention.swift */; };
+		85C026112855B2FD00F53821 /* appstore.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C026102855B2FD00F53821 /* appstore.json */; };
+		85C026132855B30900F53821 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026122855B30900F53821 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		85C026052855AB7500F53821 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		85C026072855AB7F00F53821 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		85C026092855AB8700F53821 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		85C0260E2855B0EB00F53821 /* BundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtention.swift; sourceTree = "<group>"; };
+		85C026102855B2FD00F53821 /* appstore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appstore.json; sourceTree = "<group>"; };
+		85C026122855B30900F53821 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 		85C0260B2855AB8F00F53821 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85C026102855B2FD00F53821 /* appstore.json */,
+				85C026122855B30900F53821 /* App.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +112,7 @@
 		85C0260D2855ABA700F53821 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				85C0260E2855B0EB00F53821 /* BundleExtention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 				85C025FD2855A45900F53821 /* LaunchScreen.storyboard in Resources */,
 				85C025FA2855A45900F53821 /* Assets.xcassets in Resources */,
 				85C025F82855A45700F53821 /* Main.storyboard in Resources */,
+				85C026112855B2FD00F53821 /* appstore.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +193,8 @@
 				85C025F12855A45700F53821 /* AppDelegate.swift in Sources */,
 				85C026082855AB7F00F53821 /* ArcadeViewController.swift in Sources */,
 				85C026062855AB7500F53821 /* SearchViewController.swift in Sources */,
+				85C0260F2855B0EB00F53821 /* BundleExtention.swift in Sources */,
+				85C026132855B30900F53821 /* App.swift in Sources */,
 				85C0260A2855AB8700F53821 /* GamesViewController.swift in Sources */,
 				85C025F32855A45700F53821 /* SceneDelegate.swift in Sources */,
 			);
