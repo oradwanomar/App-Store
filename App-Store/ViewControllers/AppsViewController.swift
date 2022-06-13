@@ -28,6 +28,14 @@ class AppsViewController: UIViewController {
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
     }
+    
+    func configure<T:SelfConfiguringCell>(_ cellType: T.Type,with app: App,for indexPath: IndexPath)-> T {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath) as? T else { fatalError("Unable to deque \(cellType)") }
+        
+        cell.configure(with: app)
+        
+        return cell
+    }
 
 
 }
