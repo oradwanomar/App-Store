@@ -59,6 +59,22 @@ class AppsViewController: UIViewController {
         dataSource?.apply(snapshot)
     }
     
+    func createCompositionalLayout()-> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { sectionIndex,layoutEnviroment in
+            let section = self.sections[sectionIndex]
+            switch section.type {
+                
+            default:
+                return self.createFeaturedSection(with: section)
+            }
+        }
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 20
+        layout.configuration = config
+        
+        return layout
+    }
+    
     func createFeaturedSection(with section: Section) -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .fractionalHeight(1))
         let itemLayout = NSCollectionLayoutItem(layoutSize: itemSize)
