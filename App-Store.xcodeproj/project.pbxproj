@@ -24,6 +24,7 @@
 		85C026112855B2FD00F53821 /* appstore.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C026102855B2FD00F53821 /* appstore.json */; };
 		85C026132855B30900F53821 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026122855B30900F53821 /* App.swift */; };
 		85C026152855B38700F53821 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C026142855B38700F53821 /* Section.swift */; };
+		85E435AA2857AFDA00052D42 /* SmallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E435A92857AFDA00052D42 /* SmallTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		85C026102855B2FD00F53821 /* appstore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appstore.json; sourceTree = "<group>"; };
 		85C026122855B30900F53821 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		85C026142855B38700F53821 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		85E435A92857AFDA00052D42 /* SmallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				859707752856FCAA0003B1CE /* FeaturedCollectionViewCell.swift */,
 				85970777285715D30003B1CE /* MediumTableCell.swift */,
 				8597077928571DC90003B1CE /* SectionHeader.swift */,
+				85E435A92857AFDA00052D42 /* SmallTableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				85C025F12855A45700F53821 /* AppDelegate.swift in Sources */,
 				85C026082855AB7F00F53821 /* ArcadeViewController.swift in Sources */,
 				85C026062855AB7500F53821 /* SearchViewController.swift in Sources */,
+				85E435AA2857AFDA00052D42 /* SmallTableCell.swift in Sources */,
 				85C0260F2855B0EB00F53821 /* BundleExtention.swift in Sources */,
 				85C026132855B30900F53821 /* App.swift in Sources */,
 				859707722856FBAD0003B1CE /* SelfConfiguringCell.swift in Sources */,

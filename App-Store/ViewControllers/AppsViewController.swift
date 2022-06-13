@@ -111,3 +111,10 @@ class AppsViewController: UIViewController {
 
 }
 
+extension AppsViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+}
