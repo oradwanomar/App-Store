@@ -53,7 +53,6 @@ class AppsViewController: UIViewController {
             }
         }
 
-
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else {
                 return nil
