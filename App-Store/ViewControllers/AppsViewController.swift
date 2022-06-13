@@ -33,7 +33,6 @@ class AppsViewController: UIViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath) as? T else { fatalError("Unable to deque \(cellType)") }
         
         cell.configure(with: app)
-        
         return cell
     }
 
