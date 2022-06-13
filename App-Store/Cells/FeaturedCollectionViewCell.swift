@@ -26,6 +26,11 @@ class FeaturedCollectionViewCell: UICollectionViewCell,SelfConfiguringCell {
     }
     
     func configureUI(){
+        
+        let separator = UIView(frame: .zero)
+        separator.translatesAutoresizingMaskIntoConstraints = false
+        separator.backgroundColor = .quaternaryLabel
+        
         tagLine.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 14,weight: .bold))
         tagLine.textColor = .systemBlue
         
@@ -36,22 +41,25 @@ class FeaturedCollectionViewCell: UICollectionViewCell,SelfConfiguringCell {
         subtitle.textColor = .secondaryLabel
         
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 5
-        imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 20
+        imageView.contentMode = .scaleAspectFill
         
-        let stackView = UIStackView(arrangedSubviews: [tagLine,name,subtitle,imageView])
+        let stackView = UIStackView(arrangedSubviews: [separator,tagLine,name,subtitle,imageView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         
         contentView.addSubview(stackView)
         
         NSLayoutConstraint.activate([
+            separator.heightAnchor.constraint(equalToConstant: 1),
+            
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         ])
         
+        stackView.setCustomSpacing(10, after: separator)
         stackView.setCustomSpacing(10, after: subtitle)
     }
     
