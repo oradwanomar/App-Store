@@ -49,9 +49,10 @@ class AppsViewController: UIViewController {
             case "smallTable":
                 return self.configure(SmallTableCell.self, with: app, for: indexPath)
             default:
-                return self.configure(FeaturedCell.self, with: app, for: indexPath)
+                return self.configure(FeaturedCollectionViewCell.self, with: app, for: indexPath)
             }
         }
+        
 
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else {
@@ -85,11 +86,11 @@ class AppsViewController: UIViewController {
             
             switch section.type {
             case "mediumTable":
-                return self.createMediumTableSection(using: section)
+                return self.createMediumSection(with: section)
             case "smallTable":
                 return self.createSmallTableSection(using: section)
             default:
-                return self.createFeaturedSection(using: section)
+                return self.createFeaturedSection(with: section)
             }
         }
         let config = UICollectionViewCompositionalLayoutConfiguration()
