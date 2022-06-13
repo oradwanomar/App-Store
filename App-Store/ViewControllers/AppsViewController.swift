@@ -52,6 +52,8 @@ class AppsViewController: UIViewController {
                 return self.configure(FeaturedCollectionViewCell.self, with: app, for: indexPath)
             }
         }
+        
+        
 
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else {
